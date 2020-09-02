@@ -6,7 +6,7 @@
 body{
     background-color: #EEEFEE;
     font-family: 'Work Sans', sans-serif;
-    size: 16px;
+    size: 0.5rem;
     color: #101010;
     width: 100%;
     height: 100%;
@@ -19,9 +19,10 @@ h1{
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 29px; 
     margin: 20px;
+    text-align: center;
 }
 
 /*CONTAINER*/
@@ -39,6 +40,8 @@ h1{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    
 }
 
 aside{
@@ -46,7 +49,19 @@ aside{
     background-color: #fff;
     min-height: 100vh;
     width: 17%;
+    flex-direction: column;
 }
+
+.page-container{
+    /* background-color: #4AAD52; */
+    width: 77%;
+    min-height: 100px;
+    margin: 3% 3% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+}
+
 
 /* LOGIN PAGE START*/
 
@@ -72,7 +87,6 @@ aside{
 .input:focus {
     outline: none;
 }
-
 
 .input-container {
     width: 100%;
@@ -147,3 +161,100 @@ aside{
 /* LOGIN PAGE SLUT*/
 
 /*FRONT PAGE KITCHEN */
+
+aside img{
+    width: 74%;
+    padding: 0% 13% 0% 13%;
+}
+
+nav{
+    margin: 40% 13% 0% 13%
+}
+nav ul{
+    list-style: none;
+   
+}
+
+nav ul li{
+    line-height: 36px;
+    font-size: 16px;
+}
+
+nav li a{
+    color: #101010;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #4AAD52;
+}
+
+.activePage{
+    color: #4AAD52;
+}
+
+/* CONTENT BOXES */
+
+.ordning{
+    width: 100%;
+    min-height: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    gap:1rem;
+}
+
+
+.week-container{
+    align-items: center;
+    background-color: lightsalmon;
+    display: flex;
+    margin: 0rem 10rem 1rem 10rem;
+    justify-content: center;
+}
+
+.inner {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.date{
+    text-align: center;
+    justify-content: center;
+    /* background-color: mediumpurple; */
+
+}
+
+.date a{
+    font-family: Inter;
+    text-decoration: none;
+    color: #4AAD52;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.date a:hover{
+    color: #101010;
+}
+.date p{
+    font-size: 0.8rem;
+
+}
+
+.today{
+    width: 20rem;
+}
+
+.weekday{
+    /* width: 11rem; */
+}
