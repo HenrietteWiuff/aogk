@@ -15,7 +15,7 @@ body{
 
 /* HEADINGS*/
 
-h4{
+h1{
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -41,15 +41,11 @@ h4{
     display: flex;
 }
 
-
-.menu-container{
+aside{
     display: flex;
-    flex-direction: column;
     background-color: #fff;
-    width: 11.5%;
     min-height: 100vh;
-    padding-left:20px;
-
+    width: 15%;
 }
 
 /* LOGIN PAGE START*/
@@ -151,19 +147,3 @@ h4{
 /* LOGIN PAGE SLUT*/
 
 /*FRONT PAGE KITCHEN */
-
-
-.menu-container ul li {
-    list-style: none;   
-}   
-
-.menu-container li a{
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 35px;
-    color: #101010;
-}
-
-.menu-container li a:hover{
-    color: #4AAD52;
-}
