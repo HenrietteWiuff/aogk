@@ -41,14 +41,10 @@ h4{
     display: flex;
 }
 
-.top-container{
-    display: flex;
-    background-color: #c5c8c4;
-    width: 100%;
-}
 
 .menu-container{
     display: flex;
+    flex-direction: column;
     background-color: #fff;
     width: 11.5%;
     min-height: 100vh;
@@ -156,9 +152,6 @@ h4{
 
 /*FRONT PAGE KITCHEN */
 
-.front{
-    padding: 0% 0% 0% 1.2%;
-}
 
 .menu-container ul li {
     list-style: none;   
@@ -166,5 +159,11 @@ h4{
 
 .menu-container li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #101010;
+}
+
+.menu-container li a:hover{
+    color: #4AAD52;
 }
