@@ -20,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="#" class="activePage">Forside</a></li>
-                    <li><a href="#">Økonomi</a></li>
+                    <li><a href="overview.html">Økonomi</a></li>
                     <li><a href="#">Logud</a></li>
                 </ul>
             </nav>
@@ -471,12 +471,12 @@
 <script>
 function toggleButton() {
       const button = document.getElementById("toggle");
-      const isClicked = button.classList.contains("active");
+      const isClicked = button.classList.contains("status2");
       if (!isClicked) {
-        button.classList.add("active");
+        button.classList.add("status2");
         button.innerHTML = "AFHENTET";
       } else {
-        button.classList.remove("active");
+        button.classList.remove("status2");
         button.innerHTML = "Venter";
       }
     }

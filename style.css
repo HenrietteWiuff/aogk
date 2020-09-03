@@ -343,7 +343,7 @@ table {
 }
 
 /* STATUS BUTTON */
-.active {
+.status2 {
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -367,3 +367,5 @@ table {
 }
 
 /* EXTRAORDER PERSONAL ENDS */
+
+
