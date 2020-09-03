@@ -217,6 +217,7 @@ nav li a:hover{
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
+    margin: 0rem 0rem 1rem 0rem;
     padding: 0rem 0rem 1rem 0rem;
 }
 
@@ -280,6 +281,12 @@ nav li a:hover{
     border: 1px solid #101010;
 }
 
+.tableOrder {
+    width: 100%;
+    border: 1px solid #101010;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
 /*TABLE CONTENT*/
 
 table {
@@ -293,7 +300,7 @@ table {
     padding: 8px 20px 8px 20px;
   }
 
-.weekday tr:nth-child(even) {
+.weekday tr:nth-child(even), .tableOrder tr:nth-child(even) {
     background-color: #EEEFEE;
 }
 .today tr:nth-child(odd){
@@ -303,3 +310,60 @@ table {
 .dayshead{
    padding: 8px 0px 8px 0px;
 }
+
+/* EXTRAORDER PERSONAL */
+/* EXTRAORDER HEADING */
+.tableOrder th:nth-child(1), .tableOrder th:nth-child(3) {
+    font-size: 1.25rem;
+}
+
+.tableOrder th:nth-child(2), .tableOrder th:nth-child(4) {
+    font-size: 1.25rem;
+}
+
+/* EXTRAORDER BOXES */
+.tableOrder td:nth-child(1), .tableOrder th:nth-child(1){
+    width: 20%;
+    text-align: left;
+}
+
+.tableOrder td:nth-child(2), .tableOrder th:nth-child(2){
+    width: 5%;
+    text-align: center;
+}
+
+.tableOrder td:nth-child(3), .tableOrder th:nth-child(3){
+    text-align: left;
+}
+
+.tableOrder td:nth-child(4), .tableOrder th:nth-child(4){
+  
+    text-align: center;
+    width: 10%;
+}
+
+/* STATUS BUTTON */
+.active {
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: none;
+    background-color: #4AAD52;
+    }
+
+.status{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: solid 1px #4AAD52;
+    color: #4AAD52;
+}
+
+/* EXTRAORDER PERSONAL ENDS */
