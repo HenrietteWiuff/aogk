@@ -214,7 +214,7 @@ nav li a:hover{
 
 .week-container{
     align-items: center;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     display: flex;
     margin: 0rem 10rem 1rem 10rem;
     justify-content: center;
