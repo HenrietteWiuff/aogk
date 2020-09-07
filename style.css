@@ -32,12 +32,36 @@ h2{
     margin: 0rem 0rem 0.3rem 0rem;
     text-align: center;
     }
+
+h3{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+    }
     
 h5{
     font-family: Work Sans;
     font-weight: normal;
     font-size: 0.875rem;
     margin: 0rem 0rem 0.8rem 0rem;
+    text-align: center;
+}
+
+/* DISPLAY HEADING */
+
+.display3{
+    font-family: Inter;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+}
+
+.display4{
+    font-family: Inter;
+    font-size: 1rem;
+    margin: 0rem 0rem 0rem 0rem;
     text-align: center;
 }
 
@@ -228,6 +252,13 @@ nav li a:hover{
     gap:1rem;
 }
 
+.overview-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 5rem 0.3rem 2.8rem;
+    justify-content: space-between;
+}
+
 
 .week-container{
     align-items: center;
@@ -287,6 +318,10 @@ nav li a:hover{
     margin: 0rem 0rem 3rem 0rem;
 }
 
+.overview{
+
+}
+
 /*TABLE CONTENT*/
 
 table {
@@ -294,10 +329,23 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+.orders-table{
+    width: 100%;
+    text-align: left;
+    background-color: #FFF
+}
+
+.orders-table tr td:nth-child(4), .orders-table th:nth-child(4) {
+    /* background-color: #fff; */
+    text-align-last: right;
+    width: 15%;
+    padding: 0rem 2.5rem 0rem 0rem;
+}
   
   td, th {
     /* text-align: left; */
     padding: 8px 20px 8px 20px;
+
   }
 
 .weekday tr:nth-child(even), .tableOrder tr:nth-child(even) {
@@ -337,7 +385,6 @@ table {
 }
 
 .tableOrder td:nth-child(4), .tableOrder th:nth-child(4){
-  
     text-align: center;
     width: 10%;
 }
@@ -369,3 +416,69 @@ table {
 /* EXTRAORDER PERSONAL ENDS */
 
 
+/*OVERVIEW STAR*/
+
+.button_acco { 
+ width:100%; 
+ border: 0
+}
+
+.accordion {
+cursor: pointer;
+padding: 0rem 0.5rem 0.7rem 0.5rem;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+transition: 0.4s;
+background-color: transparent;
+}
+
+.active, td:hover {
+/* background-color: #4AAD52;  */
+}
+
+.panel {
+display: none;
+overflow: hidden;
+}
+
+
+.corporation-price{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem 0rem 0rem;
+    justify-content: space-between;
+}
+
+.corporation-price:nth-child(even){
+    background-color: #EEEFEE;
+}
+
+.corporation:hover .orders-table {
+    background: #fff;
+}
+tr td.corporation:nth-child(even){
+    background-color: pink;;
+
+}
+
+.total-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px;
+}
+
+.total {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.grey{
+    backround-color: #EEEFEE;
+}
+
+.white{
+    backround-color: #fff;
+
+}
