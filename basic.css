@@ -1,0 +1,539 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #EEEFEE;
+    font-family: 'Work Sans', sans-serif;
+    size: 0.5rem;
+    color: #101010;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADINGS*/
+
+h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem; 
+    margin: 1.25rem;
+    text-align: left;
+}
+
+h2{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+    }
+
+h3{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+    }
+    
+h5{
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 0.875rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    text-align: center;
+}
+
+/* DISPLAY HEADING */
+
+.display3{
+    font-family: Inter;
+    font-size: 1.125rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+}
+
+.display4{
+    font-family: Inter;
+    font-size: 1rem;
+    margin: 0rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.display5{
+    font-family: Inter;
+    font-size: 0.875rem;
+    margin: 0rem 0rem 0rem 0rem;
+    text-align: center;
+}
+/*CONTAINERS*/
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url('grafik/forside.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+}
+
+.front_container{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-image: url('grafik/frontcustomer.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+
+.menu-container{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    /* background-color: tomato; */
+    z-index: 1;
+    align-items: center;
+    margin: 0rem 2rem;
+}
+
+.contest-container{
+    display: flex;
+    width: 85%;
+    height: 70vh;
+    /* background-color: turquoise; */
+    margin: auto auto;
+    z-index: 2;
+}
+
+.infotext-container{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: teal; */
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0rem 4rem 0rem 0rem;
+}
+
+.infotext-container p{
+    padding: 0rem 0rem 0rem 1.3rem;
+}
+
+.customer-container{
+    display: flex;
+    width: 40%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 3rem 0rem;
+}
+
+.subscription-container{
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 2.5rem 6rem 2.5rem 6rem;
+    /* background-color: yellow; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #4AAD52;
+    border-radius: 7px;
+    margin: 1.5rem 0rem 0.2rem 0rem;
+}
+
+.white_container{
+    background-color: #fff;
+    padding: 2rem 10rem;
+    position: relative;
+    top: 150px;
+}
+
+.frokoster_customer_container{
+    width: 100%;
+    min-height: 300px;
+}
+
+/* SUBCRIPTIONS CONTAINER*/
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.left-container{
+    /* background-color: lightblue; */
+    width: 30%;
+    margin-left: auto;
+    margin-right: 5%;
+
+}
+
+.right-container{
+    /* background-color: lightcoral; */
+    width: 30%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/*MENU*/
+
+.opacity{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.65;
+    background-color: black;
+    position: fixed;
+} 
+
+.front_opacity{
+    height: 150px;
+    width: 100vw;
+    opacity: 0.65;
+    background-color: black;
+    position: fixed;
+} 
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul li{
+    list-style: none;
+     padding: 1rem 1rem 1rem 1rem;
+     display: inline;
+}
+
+/* LINKS*/
+
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+a:hover{
+    color: #4aad52;
+}
+
+/*LOGIN CUSTOMER*/
+
+
+.input{
+    width: 240px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.input-opret{
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+ #eyeop, #eyecls{
+    border: none;
+    background-color: #ffffff;
+    color: #4AAD52;
+    outline: none;
+}
+
+.forgot a{
+    display: flex;
+    justify-content: flex-end;
+    color: #858585;
+    font-size: 12px;
+    margin-bottom: 5%;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    color: #4AAD52;
+}
+
+
+.submit{
+    background-color: #4AAD52;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 150px;
+    height:30px;
+    border: none;
+    color: #fff;
+    margin: 1rem 0rem 0.6rem 0rem;
+}
+
+.opret a{
+    color: #858585;
+    text-decoration: none;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.opret a:hover{
+    color: #4aad52;
+}
+
+/* IPAD STR. */
+@media only screen and (max-width: 1024px) {
+    .input-container {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border: 1px solid #4AAD52;
+        border-radius: 7px;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
+
+    .loginbox{
+        width: 60%;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* LOGIN PAGE SLUT*/
+
+/* DROP DOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    color: #fff;
+    min-width: 200px;
+    padding: 0.4rem 0rem;
+    z-index: 1;
+  }
+
+  .dropdown-info {
+    display: none;
+    position: absolute;
+    color: #858585;
+    min-width: 200px;
+    padding: 0.4rem 0rem;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-info {
+    display: block;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding:  0.3rem 0rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: transparent;
+    color: #4AAD52;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* INDHOLD FROKOST */
+
+.week-container{
+    align-items: center;
+    /* background-color: lightsalmon; */
+    display: flex;
+    margin: 0rem 10rem 1rem 10rem;
+    justify-content: center;
+}
+
+.inner {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.date{
+    text-align: center;
+    justify-content: center;
+    /* background-color: mediumpurple; */
+
+}
+
+.date a{
+    font-family: Inter;
+    text-decoration: none;
+    color: #4AAD52;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.date a:hover{
+    color: #101010;
+}
+.date p{
+    font-size: 0.8rem;
+}
+
+/* .table-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+    gap:1rem;
+} */
+
+.ordning{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.weekday{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #101010;
+}
+
+.weekday tr:nth-child(even), .tableOrder tr:nth-child(even) {
+    background-color: #EEEFEE;
+}
+
+table {
+    font-family: Work Sans;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    /* text-align: left; */
+    padding: 8px 5px 8px 5px;
+}
+
+.button_frokost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+/* EXTRAORDER BOXES */
+.weekday td:nth-child(1), .weekdag th:nth-child(1){
+    padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.weekday td:nth-child(2), .weekday th:nth-child(2){
+    width: 15%;
+    text-align: center;
+}
+
+.plus-minus-container{
+    display: flex;
+    justify-content: center;
+    /* padding: 0rem 4rem; */
+    align-items: center;
+}
+
+.plus-minus {
+    padding: 0rem 0.5rem;
+}
+
+.minusbutton, .plusbutton{
+    width: 18px;
+    height: 18px;
+    /* background-color: #858585; */
+    /* color: #FFF; */
+    border: none;
+    /* border-radius: 1.5px; */
+    justify-content: center;
+    text-align: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.minusbutton{
+    background-image: url('grafik/dash.svg');
+}
+
+.plusbutton{
+    background-image: url('grafik/plus.svg');
+}
+
+.counter-input {
+    border: none;
+    width: 21px;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    size: 17px;
+}
