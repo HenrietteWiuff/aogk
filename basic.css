@@ -48,6 +48,11 @@ h5{
     text-align: center;
 }
 
+p{
+    font-size: 0.875rem;
+}
+
+
 /* DISPLAY HEADING */
 
 .display3{
@@ -70,6 +75,15 @@ h5{
     margin: 0rem 0rem 0rem 0rem;
     text-align: center;
 }
+
+/* ALIGMENT */
+
+.center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /*CONTAINERS*/
 
 .container{
@@ -97,7 +111,17 @@ h5{
     z-index: 1;
 }
 
-
+.ekstra_billed_container{
+    display: flex;
+    height: 150px;
+    width: 100vw;
+    background-image: url('grafik/ekstra.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex-direction: column;
+    z-index: 5;
+}
 
 .menu-container{
     display: flex;
@@ -171,10 +195,17 @@ h5{
 
 .white_container{
     background-color: #fff;
-    padding: 2rem 10rem;
-    position: relative;
-    top: 150px;
+    padding: 1rem 10rem;
+    margin-top: 150px;
+    z-index: -10;
 }
+
+.white_container_ekstra{
+    background-color: #fff;
+    padding: 1rem 10rem;
+    z-index: -10;
+}
+
 
 .frokoster_customer_container{
     width: 100%;
@@ -221,6 +252,13 @@ h5{
     opacity: 0.65;
     background-color: black;
     position: fixed;
+} 
+
+.ekstra_opacity{
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+    background-color: black;
 } 
 
 .nav-bar{
