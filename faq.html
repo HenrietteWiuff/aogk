@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alfred & Kamilla</title>
+        <link rel="stylesheet" type="text/css" href="basic.css">
+        <link rel="stylesheet" href="/path/to/cdn/font-awesome/VERSION/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+ 
+
+
+      </head>
+      
+      <body>
+      
+        <div class="front_container">
+          <div class="front_opacity"></div>
+          <div class="menu-container">
+            <img src="grafik/aogk_neg_logo.png" width="200" height="43">
+            <div class="nav-bar">
+              <ul>
+                <li><a href="frontcustomer.html">Forside</a></li>
+                <div class="dropdown">
+                  <span><a href="#.html">Indstillinger</a></span>
+                  <div class="dropdown-content">
+                    <a href="settings.html">Profil</a>
+                    <a href="choice.html">Ændre standarter</a>
+                    <a href="payment.html">Betaling</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span><a href="contact.html">Kontakt</a></span>
+                  <div class="dropdown-content">
+                    <a href="faq.html">FAQ</a>
+                  </div>
+                </div>
+                <li><a href="customerlogin.html">Logud</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+<div class="white_container">
+
+    <h1 style="text-align: center">FAQ</h1>
+
+    <div class="faq_container">
+
+
+
+      <div class="accordion_container">
+
+        <div class="accordion_head">Allergier<span class="plusminus">+</span></div>
+          <div class="accordion_body" style="display: none;">
+          <p>First Accordian Body, it will have description</p>
+          </div>
+        <div class="accordion_head">Håndtering af gæster<span class="plusminus">+</span></div>
+          <div class="accordion_body" style="display: none;">
+          <p>Second Accordian Body, it will have description</p>
+          </div>
+        <div class="accordion_head">Ekstra forplejning<span class="plusminus">+</span></div>
+          <div class="accordion_body" style="display: none;">
+          <p>Third Accordian Body, it will have description</p>
+          </div>
+          <div class="accordion_head">Ferie ordning<span class="plusminus">+</span></div>
+          <div class="accordion_body" style="display: none;">
+          <p>First Accordian Body, it will have description</p>
+          </div>
+
+          <div class="accordion_head noborder">Lejning af lokaler<span class="plusminus">+</span></div>
+          <div class="accordion_body" style="display: none;">
+          <p>First Accordian Body, it will have description</p>
+          </div>
+
+    
+      
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+    
+</body>
+</html>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+    <script>
+ 
+ $(document).ready(function(){
+	//toggle the component with class accordion_body
+	$(".accordion_head").click(function(){
+		if ($('.accordion_body').is(':visible')) {
+			$(".accordion_body").slideUp(300);
+			$(".plusminus").text('+');
+		}
+        if( $(this).next(".accordion_body").is(':visible')){
+            $(this).next(".accordion_body").slideUp(300);
+            $(this).children(".plusminus").text('+');
+        }else {
+            $(this).next(".accordion_body").slideDown(300); 
+            $(this).children(".plusminus").text('-');
+        }
+	});
+});
+
+    </script>    
+
+

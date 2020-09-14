@@ -322,10 +322,6 @@ nav li a:hover{
     margin: 0rem 0rem 3rem 0rem;
 }
 
-.overview{
-
-}
-
 /*TABLE CONTENT*/
 
 table {
@@ -446,7 +442,6 @@ display: none;
 overflow: hidden;
 }
 
-
 .corporation-price{
     display: flex;
     flex-direction: row;
@@ -462,8 +457,7 @@ overflow: hidden;
     background: #fff;
 }
 tr td.corporation:nth-child(even){
-    background-color: pink;;
-
+    background-color: pink;
 }
 
 .total-container {
