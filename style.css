@@ -332,7 +332,8 @@ table {
 .orders-table{
     width: 100%;
     text-align: left;
-    background-color: #FFF
+    background-color: transparent;
+    
 }
 
 .orders-table tr td:nth-child(4), .orders-table th:nth-child(4) {
@@ -350,9 +351,14 @@ table {
 .weekday tr:nth-child(even), .tableOrder tr:nth-child(even) {
     background-color: #EEEFEE;
 }
+
 .today tr:nth-child(odd){
     background-color: #EEEFEE;
 }
+
+.table1 tr:nth-child(even){
+    background-color: transparent;
+} 
 
 .dayshead{
    padding: 8px 0px 8px 0px;
@@ -433,9 +439,6 @@ transition: 0.4s;
 background-color: transparent;
 }
 
-.active, td:hover {
-/* background-color: #4AAD52;  */
-}
 
 .panel {
 display: none;
@@ -453,9 +456,9 @@ overflow: hidden;
     background-color: #EEEFEE;
 }
 
-.corporation:hover .orders-table {
+/* .corporation:hover .orders-table {
     background: #fff;
-}
+} */
 tr td.corporation:nth-child(even){
     background-color: pink;
 }
