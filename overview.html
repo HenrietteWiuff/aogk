@@ -1,248 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Alfred & Kamilla</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Alfred & Kamilla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
+
 <body>
 
-    <div class="front-container">
-    
-        <!-- MENU BAR -->
-            
-        <aside>
-            <a href=""><img src="img/aogk_pos_logo2.png"></a>
+  <div class="front-container">
 
-            <nav>
-                <ul>
-                    <li><a href="frontkitchen.html">Forside</a></li>
-                    <li><a href="#" class="activePage">Økonomi</a></li>
-                    <li><a href="index.html">Logud</a></li>
-                </ul>
-            </nav>
+    <!-- MENU BAR -->
 
-        </aside>  
-    
-        <div class="page-container">
+    <aside>
+      <a href=""><img src="img/aogk_pos_logo2.png"></a>
 
-            <div class="ordning">
-                <h1>Måned oversigt</h1>
+      <nav>
+        <ul>
+          <li><a href="frontkitchen.html">Forside</a></li>
+          <li><a href="#" class="activePage">Økonomi</a></li>
+          <li><a href="index.html">Logud</a></li>
+        </ul>
+      </nav>
 
-                <div class="overview-container">
+    </aside>
+
+    <div class="page-container">
+
+      <div class="ordning">
+        <h1>Måned oversigt</h1>
+
+        <div class="overview-container">
+
+          <h4>Virksomhed</h4>
+          <h4>Pris</h4>
+
+        </div> <!-- END OVERVIEW-CONTAINER -->
+
+        <div class="table-container">
+
+          <div class="weekday">
+
+            <table>
+
+              <!-- FIRST CORPORATION  -->
+              <tr>
+                <td class="corporation">
+                  <button class="accordion button_acco display4">
+                    <div class="corporation-price">
+                      <p>Navn på virksomhed</p>
+                      <p>Pris</p>
+                    </div>
+                  </button>
+                  <!-- ACCORDION CONTENT -->
+                  <div class="panel">
+
+                </td> <!-- END CORPORATION -->
+              </tr>
+
+              <!-- SECOND CORPORATION  -->
+              <tr>
+                <td class="corporation">
+                  <button class="accordion button_acco display4">
+                    <div class="corporation-price">
+                      <p>Navn på virksomhed</p>
+                      <p>Pris</p>
+                    </div>
+                  </button>
+
+                  <!-- ACCORDION CONTENT -->
+                  <div class="panel">
+
+                    <div class="orders-table">
+                      <table class="table1">
+                        <tr>
+                          <th>Enhed</th>
+                          <th>Pris pr. stk.</th>
+                          <th>Antal</th>
+                          <th>Total</th>
+                        </tr>
+
+                        <tr>
+                          <td>- Alm. frokost</td>
+                          <td>
+                            <p class="regular-price" data-regular-price="52">52 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-regular"></td>
+                          <td>
+                            <p><span class="regular-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>- Glutenfri</td>
+                          <td>
+                            <p class="glutenfree-price" data-glutenfree-price="52">52 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-glutenfree"></td>
+                          <td>
+                            <p><span class="glutenfree-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>- Mælk</td>
+                          <td>
+                            <p class="milk-price" data-milk-price="10">10 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-milk"></td>
+                          <td>
+                            <p><span class="milk-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+                      </table> <!-- END TABLE1 -->
+
+                      <div class="total-container">
+                        <p class="total">0 kr</p>
+                      </div>
+
+                    </div> <!-- END ORDERS-TABLE -->
+                </td> <!-- END CORPORATION -->
+              </tr>
+
+              <!-- THIRD CORPORATION  -->
+              <tr>
+                <td class="corporation">
+                  <button class="accordion button_acco display4">
+                    <div class="corporation-price">
+                      <p>Navn på virksomhed</p>
+                      <p>Pris</p>
+                    </div>
+                  </button>
+
+                  <!-- ACCORDION CONTENT -->
+                  <div class="panel">
+
+                    <div class="orders-table">
+
+                      <table class="table1">
+
+                        <tr>
+                          <th>Enhed</th>
+                          <th>Pris pr. stk.</th>
+                          <th>Antal</th>
+                          <th>Total</th>
+                        </tr>
+
+                        <tr>
+                          <td>- Alm. frokost</td>
+                          <td>
+                            <p class="regular-price" data-regular-price="52">52 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-regular"></td>
+                          <td>
+                            <p><span class="regular-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>- Glutenfri</td>
+                          <td>
+                            <p class="glutenfree-price" data-glutenfree-price="52">52 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-glutenfree"></td>
+                          <td>
+                            <p><span class="glutenfree-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>- Mælk</td>
+                          <td>
+                            <p class="milk-price" data-milk-price="10">10 kr.</p>
+                          </td>
+                          <td><input type="number" class="quantity-milk"></td>
+                          <td>
+                            <p><span class="milk-total">0 kr</span></p>
+                          </td>
+                        </tr>
+
+
+                      </table> <!-- END TABLE1 -->
+
+                      <div class="total-container">
+                        <p class="total">0 kr</p>
+                      </div>
+
+                    </div> <!-- END ORDERS-TABLE -->
+
+                </td> <!-- END CORPORATION -->
+              </tr>
+
+              <!-- FOURTH CORPORATION  -->
+              <tr>
+                <td class="corporation">
+                  <button class="accordion button_acco display4">
+                    <div class="corporation-price">
+                      <p>Navn på virksomhed</p>
+                      <p>Pris</p>
+                    </div>
+                  </button>
+
+                  <!-- ACCORDION CONTENT -->
+                  <div class="panel">
                     
-                            <h4>Virksomhed</h4>
-                            <h4>Pris</h4>
-                        
-                </div>
-                
+                </td> <!-- END CORPORATION -->
+              </tr>
 
-
-                <div class="table-container">
-
-                <div class="weekday">
-
-                <table>
-                    <tr>
-                        <td class="corporation">
-                            <button class="accordion button_acco display4">
-                            <div class="corporation-price">
-                                <p>Navn på virksomhed</p> 
-                                <p>Pris</p> 
-                            </div>
-                        </button><div class="panel">
-                
-                            </td>      
-                    </tr>
-
-
-                    <tr>
-                        <td class="corporation">
-                            <button class="accordion button_acco display4">
-                                <div class="corporation-price">
-                                    <p>Navn på virksomhed</p> 
-                                    <p>Pris</p> 
-                                </div>
-                            </button><div class="panel">
-                                       <div class="orders-table">
-                                <table class="table1">
-                                    <tr>
-                                        <th>Enhed</th>
-                                        <th>Pris pr. stk.</th>
-                                        <th>Antal</th>
-                                        <th>Total</th>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>- Alm. frokost</td>
-                                        <td> <p class="regular-price" data-regular-price="52">52 kr.</p></td>
-                                        <td><input type="number" class="quantity-regular"></td>
-                                        <td><p><span class="regular-total">0 kr</span></p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Glutenfri</td>
-                                        <td> <p class="glutenfree-price" data-glutenfree-price="52">52 kr.</p></td>
-                                        <td><input type="number" class="quantity-glutenfree"></td>
-                                        <td><p><span class="glutenfree-total">0 kr</span></p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Mælk</td>
-                                        <td> <p class="milk-price" data-milk-price="10">10 kr.</p></td>
-                                        <td><input type="number" class="quantity-milk"></td>
-                                        <td><p><span class="milk-total">0 kr</span></p></td>
-                                    </tr>
-                                 
-                                </table>
-
-                                <div class="total-container">
-                                    <p class="total">0 kr</p>
-                                </div>
-                                
-                                </div>
-                            </td>  
-                    </tr>
-              
-                    <tr>
-                        <td class="corporation">
-                            <button class="accordion button_acco display4">
-                                <div class="corporation-price">
-                                    <p>Navn på virksomhed</p> 
-                                    <p>Pris</p> 
-                                </div>
-                            </button><div class="panel">
-                        
-                                <div class="orders-table">
-                                <table class="table1">
-                            
-                                    <tr>
-                                        <th>Enhed</th>
-                                        <th>Pris pr. stk.</th>
-                                        <th>Antal</th>
-                                        <th>Total</th>
-                                    </tr>
-                                    <tr>
-                                        <td>- Alm. frokost</td>
-                                        <td> <p class="regular-price" data-regular-price="52">52 kr.</p></td>
-                                        <td><input type="number" class="quantity-regular"></td>
-                                        <td><p><span class="regular-total">0 kr</span></p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Glutenfri</td>
-                                        <td> <p class="glutenfree-price" data-glutenfree-price="52">52 kr.</p></td>
-                                        <td><input type="number" class="quantity-glutenfree"></td>
-                                        <td><p><span class="glutenfree-total">0 kr</span></p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>- Mælk</td>
-                                        <td> <p class="milk-price" data-milk-price="10">10 kr.</p></td>
-                                        <td><input type="number" class="quantity-milk"></td>
-                                        <td><p><span class="milk-total">0 kr</span></p></td>
-                                    </tr>
-                                  
-                                 
-                                </table>
-                                <div class="total-container">
-                                    <p class="total">0 kr</p>
-                                </div>
-                                
-                                </div>
-                        </td>
-                          
-                </tr>
-                <tr>
-                    <td class="corporation">
-                        <button class="accordion button_acco display4">
-                            <div class="corporation-price">
-                                <p>Navn på virksomhed</p> 
-                                <p>Pris</p> 
-                            </div>
-                        </button><div class="panel">
-                        </td>
-                      
-                </tr>
             </table>
-            
 
-                    
-                </div>
-            </div>
-            </div>
+          </div> <!-- END WEEKDAY -->
 
-        </div>
+        </div> <!-- END TABLE-CONTAINER -->
 
-    </div>
-    
+      </div> <!-- END ORDNING -->
+
+    </div> <!-- END PAGE-CONTAINER -->
+
+  </div> <!-- END FRONT-CONTAINER -->
+
 </body>
+
 </html>
 
 <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 </script>
 
 <script>
-$(document).ready(function(){
+  $(document).ready(function() {
 
     // $(".quantity").change(event)
 
-	$(".quantity-regular").on("change", function(){
-		var price = +$(".regular-price").data("regular-price");
-		var quantity = +$(this).val();
-        console.log(quantity)
+    $(".quantity-regular").on("change", function() {
+      var price = +$(".regular-price").data("regular-price");
+      var quantity = +$(this).val();
+      console.log(quantity)
 
-		$(".regular-total").text(price * quantity + " kr.");
-	})
+      $(".regular-total").text(price * quantity + " kr.");
+    })
 
-	$(".quantity-glutenfree").on("change", function(){
-		var price = +$(".glutenfree-price").data("glutenfree-price");
-		var quantity = +$(this).val();
+    $(".quantity-glutenfree").on("change", function() {
+      var price = +$(".glutenfree-price").data("glutenfree-price");
+      var quantity = +$(this).val();
 
-		$(".glutenfree-total").text(price * quantity + " kr.");
-	})
+      $(".glutenfree-total").text(price * quantity + " kr.");
+    })
 
-	$(".quantity-milk").on("change", function(){
-		var price = +$(".milk-price").data("milk-price");
-		var quantity = +$(this).val();
+    $(".quantity-milk").on("change", function() {
+      var price = +$(".milk-price").data("milk-price");
+      var quantity = +$(this).val();
 
-        console.log(price, quantity)
+      console.log(price, quantity)
 
-		$(".milk-total").text(price * quantity + " kr.");
-	})
+      $(".milk-total").text(price * quantity + " kr.");
+    })
 
-	$(".quantity-regular, .quantity-glutenfree, .quantity-milk").on("change", function(){
-        var regularPrice = +$(".regular-price").data("regular-price");
-		var regularQuantity = +$('.quantity-regular').val();
-        var regularTotal = regularPrice * regularQuantity
-        
-        var glutenfreePrice = +$(".glutenfree-price").data("glutenfree-price");
-		var glutenfreeQuantity = +$('.quantity-glutenfree').val();
-        var glutenfreeTotal = glutenfreePrice * glutenfreeQuantity
+    $(".quantity-regular, .quantity-glutenfree, .quantity-milk").on("change", function() {
+      var regularPrice = +$(".regular-price").data("regular-price");
+      var regularQuantity = +$('.quantity-regular').val();
+      var regularTotal = regularPrice * regularQuantity
 
-
-		var milkPrice = +$(".milk-price").data("milk-price");
-		var milkQuantity = +$('.quantity-milk').val();
-        var milkTotal = milkPrice * milkQuantity
-
-		$(".total").text(regularTotal + glutenfreeTotal + milkTotal + " kr.");
-       
-       console.log(regularTotal, glutenfreeTotal, milkTotal)
-	})
+      var glutenfreePrice = +$(".glutenfree-price").data("glutenfree-price");
+      var glutenfreeQuantity = +$('.quantity-glutenfree').val();
+      var glutenfreeTotal = glutenfreePrice * glutenfreeQuantity
 
 
-})
+      var milkPrice = +$(".milk-price").data("milk-price");
+      var milkQuantity = +$('.quantity-milk').val();
+      var milkTotal = milkPrice * milkQuantity
+
+      $(".total").text(regularTotal + glutenfreeTotal + milkTotal + " kr.");
+
+      console.log(regularTotal, glutenfreeTotal, milkTotal)
+    })
+
+
+  })
 </script>
