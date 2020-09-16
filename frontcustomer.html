@@ -118,28 +118,18 @@
               <td>
                 <div class="plus-minus-container">
 
-                  <input type="button" class="minusbutton plus-minus" value="" id="minus" onclick="minus()">
-                  <input type="text" class="counter-input plus-minus monday-alm" size="25" value="0" id="count">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus" onclick="plus()">
+                  <input type="button" class="minusbutton plus-minus" value="" id="minus1" onclick="minus1()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count1">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus1" onclick="plus1()">
                 </div>
               </td>
 
               <td>
                 <div class="plus-minus-container ">
 
-                  <input type="button" class="minusbutton plus-minus tuesday-alm" value="" id="minus" onclick="minus()">
-                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus" onclick="plus()">
-
-                </div>
-              </td>
-
-              <td>
-                <div class="plus-minus-container ">
-
-                  <input type="button" class="minusbutton plus-minus whensday-alm" value="" id="minus" onclick="minus()">
-                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus" onclick="plus()">
+                  <input type="button" class="minusbutton plus-minus" value="" id="minus2" onclick="minus2()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count2">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus2" onclick="plus2()">
 
                 </div>
               </td>
@@ -147,9 +137,9 @@
               <td>
                 <div class="plus-minus-container ">
 
-                  <input type="button" class="minusbutton plus-minus thursday-alm" value="" id="minus" onclick="minus()">
-                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus" onclick="plus()">
+                  <input type="button" class="minusbutton plus-minus" value="" id="minus3" onclick="minus3()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count3">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus3" onclick="plus3()">
 
                 </div>
               </td>
@@ -157,9 +147,19 @@
               <td>
                 <div class="plus-minus-container ">
 
-                  <input type="button" class="minusbutton plus-minus friday-alm" value="" id="minus" onclick="minus()">
-                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus" onclick="plus()">
+                  <input type="button" class="minusbutton plus-minus" value="" id="minus4" onclick="minus4()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count4">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus4" onclick="plus4()">
+
+                </div>
+              </td>
+
+              <td>
+                <div class="plus-minus-container ">
+
+                  <input type="button" class="minusbutton plus-minus" value="" id="minus5" onclick="minus5()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count5">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus5" onclick="plus5()">
 
                 </div>
               </td>
@@ -410,9 +410,9 @@
               <td>
                 <div class="plus-minus-container ">
 
-                  <input type="button" class="minusbutton plus-minus friday" value="" id="minus1" onclick="minus1()">
-                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count1">
-                  <input type="button" class="plusbutton plus-minus" value="" id="plus1" onclick="plus1()">
+                  <input type="button" class="minusbutton plus-minus friday" value="" id="minus1" onclick="minus25()">
+                  <input type="text" class="counter-input plus-minus" size="25" value="0" id="count25">
+                  <input type="button" class="plusbutton plus-minus" value="" id="plus1" onclick="plus25()">
 
                 </div>
               </td>
@@ -1386,66 +1386,84 @@
 </html>
 
 <script>
-  var count = 0;
-  var countEl = document.getElementById("count");
-
-  function plus() {
-    count++;
-    countEl.value = count;
-  }
-
-  function minus() {
-    if (count > 0) {
-      count--;
-      countEl.value = count;
-    }
-  }
-</script>
-<script>
-  var count = 0;
-  var countEl = document.getElementById("count1");
+  var count1 = 0;
+  var countEl1 = document.getElementById("count1");
 
   function plus1() {
-    count++;
-    countEl.value = count;
+    count1++;
+    countEl1.value = count1;
   }
 
   function minus1() {
-    if (count > 0) {
-      count--;
-      countEl.value = count;
+    if (count1 > 0) {
+      count1--;
+      countEl1.value = count1;
     }
   }
-</script>
 
-<script>
-  var count = 0;
-  var countEl = document.getElementById("count2");
+  var count2 = 0;
+  var countEl2 = document.getElementById("count2");
 
   function plus2() {
-    count++;
-    countEl.value = count;
+    count2++;
+    countEl2.value = count2;
   }
 
   function minus2() {
-    if (count > 0) {
-      count--;
-      countEl.value = count;
+    if (count2 > 0) {
+      count2--;
+      countEl2.value = count2;
+    }
+  }
+
+  var count3 = 0;
+  var countEl3 = document.getElementById("count3");
+
+  function plus3() {
+    count3++;
+    countEl3.value = count3;
+  }
+
+  function minus3() {
+    if (count3 > 0) {
+      count3--;
+      countEl3.value = count3;
+    }
+  }
+
+  var count4 = 0;
+  var countEl4 = document.getElementById("count4");
+
+  function plus4() {
+    count4++;
+    countEl4.value = count4;
+  }
+
+  function minus4() {
+    if (count4 > 0) {
+      count4--;
+      countEl4.value = count4;
+    }
+  }
+
+  var count5 = 0;
+  var countEl5 = document.getElementById("count5");
+
+  function plus5() {
+    count5++;
+    countEl5.value = count5;
+  }
+
+  function minus5() {
+    if (count5 > 0) {
+      count5--;
+      countEl5.value = count5;
     }
   }
 </script>
 
-<script>
 
-$(".quantity-regular").on("change", function(){
-		var price = +$(".regular-price").data("regular-price");
-		var quantity = +$(this).val();
-        console.log(quantity)
 
-		$(".regular-total").text(price * quantity + " kr.");
-	})
-  
-</script>
 
 <script>
   $("monday").on("change", function(){

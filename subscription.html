@@ -137,9 +137,9 @@
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
                     </svg>
 
-                    <input type="password" id="myInput" class="input-opret" placeholder="Gentag password" type="password">
+                    <input type="password" id="myInput2" class="input-opret" placeholder="Gentag password" type="password">
                     
-                    <button id="eyeop" onclick="myFunction()"> 
+                    <button id="eyeop2" onclick="myFunction2()"> 
                     
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" color="#4aad52"  xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
@@ -148,7 +148,7 @@
                 
                     </button>
 
-                    <button id="eyecls" onclick="myFunction()"style="display: none;"> 
+                    <button id="eyecls2" onclick="myFunction2()"style="display: none;"> 
                     
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-slash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.79 12.912l-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
@@ -188,6 +188,19 @@
         passw.type = "password";
         eyeop.style.display="block";
         eyecls.style.display="none";
+      }
+    }
+
+    function myFunction2() {
+      var passw2 = document.getElementById("myInput2");
+      if (passw2.type === "password") {
+        passw2.type = "text";
+        eyeop2.style.display="none";
+        eyecls2.style.display="block";
+      } else {
+        passw2.type = "password";
+        eyeop2.style.display="block";
+        eyecls2.style.display="none";
       }
     }
     </script>
