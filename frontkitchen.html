@@ -1,483 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfred & Kamilla</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfred & Kamilla</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
+
 <body>
 
-    <div class="front-container">
-    
-        <!-- MENU BAR -->
-            
-        <aside>
-            <a href=""><img src="img/aogk_pos_logo2.png"></a>
-
-            <nav>
-                <ul>
-                    <li><a href="#" class="activePage">Forside</a></li>
-                    <li><a href="overview.html">Økonomi</a></li>
-                    <li><a href="#">Logud</a></li>
-                </ul>
-            </nav>
-
-        </aside>  
-        
-        <div class="page-container">
-
-
-            <!-- FROKOSTORDNING CONTAINER-->
-            <div class="ordning">
-
-                <h1>Frokostordning</h1>
-
-                <!-- WEEK CONTAINER -->
-                <div class="week-container">
-
-                    <div class="inner"> 
-
-                        <!-- ARROW LEFT-->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
-                            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    
-                    
-                        <!-- WEEK DATE -->
-                        <div class="date">
-                            <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
-                            <h2>UGE 40</h2>
-                            <p>2020</p>
-                        </div>
-
-                        <!-- ARROW RIGHT -->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-                        </svg>
-
-                    </div>
-                </div>
-
-                <div class="table-container">
-
-                    <!-- TABLE DAYS DATE -->
-                    <div class="today">
-                           
-
-                        <div class="dayshead"><h2>Idag</h2>
-                            <h5>Dags dato</h5></div>
-
-                        <table>
-
-                        <tr>
-                            <td style="text-align: left;">Alm. frokost</td>
-                            <td class="number">0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Glutenfri</td>
-                            <td class="number">0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Laktosefri</td>
-                            <td class="number">0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Vegetar</td>
-                            <td class="number">0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Vegansk</td>
-                            <td class="number">0</td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight: bold; text-align: left;">TOTAL</td>
-                            <td class="number" style="font-weight: bold;">0</td>
-                        </tr>
-                        </table>
-
-                    </div>
-
-                    <!-- TABLE WEEK DAYS -->
-                    <div class="weekday">
-                        
-                        
-                        <table>
-
-                            <td></td>
-
-                            <td><h2>Mandag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-                            <td><h2>Tirsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-                            
-                            <td><h2>Onsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-                            <td><h2>Torsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-                                
-                            <td><h2>Fredag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-
-
-                        <tr>
-                            <td style="text-align: left;">Alm. frokost</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Glutenfri</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Laktosefri</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Vegetar</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Vegansk</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;"><b>TOTAL</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                        </tr>
-                        </table>
-
-                    </div>
-
-
-
-                
-                </div>
-            
-            </div>
-
-           
-            <div class="ordning">
-                <h1>Ekstraforplejning</h1>
-
-                <!-- ENKELT BESTILLING -->
-
-                <!-- DAG CONTAINER -->
-                <div class="week-container">
-
-                    <div class="inner"> 
-
-                        <!-- ARROW LEFT-->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
-                            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    
-                    
-                        <!-- WEEK DATE -->
-                        <div class="date">
-                            <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
-                            <h2>DATO</h2>
-                            <p>2020</p>
-                        </div>
-
-                        <!-- ARROW RIGHT -->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-                        </svg>
-
-                    </div>
-                </div>
-
-
-                <div class="table-container">
-
-                    <!-- TABLE WEEK DAYS -->
-                    <div class="tableOrder">
-                        
-                        
-                        <table>
-                        <tr>
-                            <th>Virksomhed</th>
-
-                            <th>Antal</th>
-                            
-                            <th>Vare</th>
-
-                            <th>Status</th>
-                        </tr>
-
-
-
-                        <tr>
-                            <td>Navn på Virksomhed</td>
-                            <td>2<br>1</td>
-                            <td>- Smør<br>
-                                - Kage</td>
-                            <td><input type="text" text="Login" class="status" value="Venter"></td>
-                    
-                        
-                        </tr>
-                        <tr>
-                            <td>Navn på Virksomhed</td>
-                            <td>0</td>
-                            <td>- Mælk <br>
-                                - Marmelade</td>
-                            <td><input type="text" text="Login" class="status" value="Venter"></td>
-                 
-                 
-                        </tr>
-                        <tr>
-                            <td>Navn på Virksomhed</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><input type="text" text="Login" class="status" value="Venter"></td>
-           
-               
-                        </tr>
-                        <tr>
-                            <td>Navn på Virksomhed</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td> 
-                                <button class="status" id="toggle" onclick="toggleButton()">
-                                Venter
-                                </button> 
-                            </td>
-                
-         
-                        </tr>
-                        <tr>
-                            <td>Navn på Virksomhed</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                                <button class="status" id="toggle" onclick="toggleButton()">
-                                    Venter
-                                  </button> 
-                            </td>
-     
-                        </tr>
-                
-                        </table>
-
-                    </div>
-                </div>
-
-                <!-- UGE OVERSIKT AF EKSTRA-->
-                <!-- WEEK CONTAINER -->
-                <div class="week-container">
-
-                    <div class="inner"> 
-
-                        <!-- ARROW LEFT-->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
-                            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    
-                    
-                        <!-- WEEK DATE -->
-                        <div class="date">
-                            <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
-                            <h2>UGE 40</h2>
-                            <p>2020</p>
-                        </div>
-
-                        <!-- ARROW RIGHT -->
-                        <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-                        </svg>
-
-                    </div>
-                </div>
-                <div class="table-container">
-
-                    <!-- TABLE WEEK DAYS EKSTRAFORPLEJNING -->
-                    <div class="weekday">
-                        
-                        
-                        <table>
-
-                            <td style="width: 20%;"></td>
-
-                            <td><h2>Mandag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-                            <td><h2>Tirsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-                            
-                            <td><h2>Onsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-                            <td><h2>Torsdag</h2>
-                            <h5>02/09-2020 </h5></td>
-                                
-                            <td><h2>Fredag</h2>
-                            <h5>02/09-2020 </h5></td>
-
-
-
-                        <tr>
-                            <td style="text-align: left;">Smør</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Mælk</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Marmelade</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Ost</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: left;">Kage</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">Wrap</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">- Køkkenets wrap</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">- Vegetar wrap</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">Sandwich</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">- Køkkenets sandwich</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;">Vegetar sandwich</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: left;"><b>TOTAL</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                            <td><b>0</b></td>
-                        </tr>
-                        </table>
-
-                </div>
-
-
-            </div>
-
-    
-
-
-    </div>
-    
+  <div class="front-container">
+
+    <!-- MENU BAR -->
+
+    <aside>
+      <a href=""><img src="img/aogk_pos_logo2.png"></a>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="activePage">Forside</a></li>
+          <li><a href="overview.html">Økonomi</a></li>
+          <li><a href="#">Logud</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <div class="page-container">
+
+
+      <!-- FROKOSTORDNING CONTAINER-->
+      <div class="ordning">
+
+        <h1>Frokostordning</h1>
+
+        <!-- WEEK CONTAINER -->
+        <div class="week-container">
+
+          <div class="inner">
+
+            <!-- ARROW LEFT-->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+
+            <!-- WEEK DATE / CHANGE WEEK -->
+            <div class="date">
+              <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
+              <h2>UGE 40</h2>
+              <p>2020</p>
+            </div> <!-- END DATE -->
+
+            <!-- ARROW RIGHT -->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z" />
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+
+          </div> <!-- END INNER -->
+        </div> <!-- END WEEK-CONTAINER -->
+
+        <div class="table-container">
+
+          <!-- TABLE DAYS DATE -->
+          <div class="today">
+
+
+            <div class="dayshead">
+              <h2>Idag</h2>
+              <h5>Dags dato</h5>
+            </div> <!-- END DAYSHEAD-->
+
+            <table>
+
+              <tr>
+                <td style="text-align: left;">Alm. frokost</td>
+                <td class="number">0</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Glutenfri</td>
+                <td class="number">0</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Laktosefri</td>
+                <td class="number">0</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Vegetar</td>
+                <td class="number">0</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Vegansk</td>
+                <td class="number">0</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold; text-align: left;">TOTAL</td>
+                <td class="number" style="font-weight: bold;">0</td>
+              </tr>
+            </table>
+
+          </div> <!-- END TODAY -->
+
+          <!-- TABLE WEEK DAYS -->
+          <div class="weekday">
+
+            <table>
+
+              <td></td>
+
+              <td>
+                <h2>Mandag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Tirsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Onsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Torsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Fredag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <tr>
+                <td style="text-align: left;">Alm. frokost</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Glutenfri</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Laktosefri</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Vegetar</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Vegansk</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;"><b>TOTAL</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+              </tr>
+            </table>
+
+          </div> <!-- END WEEKDAY -->
+
+        </div> <!-- END TABLE-CONTAINER -->
+
+      </div> <!-- END ORDNING -->
+
+
+      <div class="ordning">
+        <h1>Ekstraforplejning</h1>
+
+        <!-- ENKELT BESTILLING -->
+
+        <!-- DAG CONTAINER -->
+        <div class="week-container">
+
+          <div class="inner">
+
+            <!-- ARROW LEFT-->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+
+            <!-- WEEK DATE / CHANGE WEEK -->
+            <div class="date">
+              <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
+              <h2>DATO</h2>
+              <p>2020</p>
+            </div> <!-- END DATE -->
+
+            <!-- ARROW RIGHT -->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z" />
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+
+          </div> <!-- END INNER -->
+
+        </div> <!-- END WEEK-CONTAINER -->
+
+
+        <div class="table-container">
+
+          <!-- TABLE WEEK DAYS -->
+          <div class="tableOrder">
+
+            <table>
+              <tr>
+                <th>Virksomhed</th>
+
+                <th>Antal</th>
+
+                <th>Vare</th>
+
+                <th>Status</th>
+              </tr>
+
+              <tr>
+                <td>Navn på Virksomhed</td>
+                <td>2<br>1</td>
+                <td>- Smør<br>
+                  - Kage</td>
+                <td><input type="text" text="Login" class="status" value="Venter"></td>
+              </tr>
+
+              <tr>
+                <td>Navn på Virksomhed</td>
+                <td>0</td>
+                <td>- Mælk <br>
+                  - Marmelade</td>
+                <td><input type="text" text="Login" class="status" value="Venter"></td>
+              </tr>
+
+              <tr>
+                <td>Navn på Virksomhed</td>
+                <td>0</td>
+                <td>0</td>
+                <td><input type="text" text="Login" class="status" value="Venter"></td>
+              </tr>
+
+              <tr>
+                <td>Navn på Virksomhed</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                  <button class="status" id="toggle" onclick="toggleButton()">
+                    Venter
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Navn på Virksomhed</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                  <button class="status" id="toggle" onclick="toggleButton()">
+                    Venter
+                  </button>
+                </td>
+              </tr>
+
+            </table>
+
+          </div> <!-- END TABLEORDER -->
+
+        </div> <!-- END TABLE-CONTAINER -->
+
+        <!-- UGE OVERSIKT AF EKSTRA-->
+        <!-- WEEK CONTAINER -->
+        <div class="week-container">
+
+          <div class="inner">
+
+            <!-- ARROW LEFT-->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+
+            <!-- WEEK DATE / CHANGE WEEK -->
+            <div class="date">
+              <a href="">Dags dato</a> <!-- Denne skal gå tilbage til dags dato i kalenderen -->
+              <h2>UGE 40</h2>
+              <p>2020</p>
+            </div> <!-- END DATE -->
+
+            <!-- ARROW RIGHT -->
+            <svg width="3em" height="3em" style="color:#4aad52" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z" />
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z" />
+            </svg>
+
+          </div> <!-- END INNER -->
+
+        </div> <!-- END WEEK-CONTAINER -->
+
+
+        <div class="table-container">
+
+          <!-- TABLE WEEK DAYS EKSTRAFORPLEJNING -->
+          <div class="weekday">
+
+            <table>
+
+              <td style="width: 20%;"></td>
+
+              <td>
+                <h2>Mandag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Tirsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Onsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Torsdag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <td>
+                <h2>Fredag</h2>
+                <h5>02/09-2020 </h5>
+              </td>
+
+              <tr>
+                <td style="text-align: left;">Smør</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Mælk</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Marmelade</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Ost</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Kage</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Wrap</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">- Køkkenets wrap</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">- Vegetar wrap</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Sandwich</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">- Køkkenets sandwich</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;">Vegetar sandwich</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: left;"><b>TOTAL</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+                <td><b>0</b></td>
+              </tr>
+
+            </table>
+
+          </div> <!-- END WEEKDAY -->
+
+        </div> <!-- END TABLE-CONTAINER -->
+
+      </div> <!-- END ORDNING -->
+
+    </div> <!-- END PAGE-CONTAINER -->
+
 </body>
+
 </html>
 
 <script>
-function toggleButton() {
-      const button = document.getElementById("toggle");
-      const isClicked = button.classList.contains("status2");
-      if (!isClicked) {
-        button.classList.add("status2");
-        button.innerHTML = "AFHENTET";
-      } else {
-        button.classList.remove("status2");
-        button.innerHTML = "Venter";
-      }
+  function toggleButton() {
+    const button = document.getElementById("toggle");
+    const isClicked = button.classList.contains("status2");
+    if (!isClicked) {
+      button.classList.add("status2");
+      button.innerHTML = "AFHENTET";
+    } else {
+      button.classList.remove("status2");
+      button.innerHTML = "Venter";
     }
+  }
 </script>
