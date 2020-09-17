@@ -1,81 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="basic.css">
-    <title>Alfred & Kamilla</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="basic.css">
+  <title>Alfred & Kamilla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="opacity"></div>
-        <div class="menu-container">
-            <img src="grafik/aogk_neg_logo.png" width="200" height="43">
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="customerlogin.html">Forside</a></li>
-                    <li><a href="concept.html">Om konceptet</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                </ul>
-            </div> <!-- END NAV_BAR-->
-          </div> <!-- END MENU-CONTAINER-->
-     
 
-        <div class="contest-container">
-            
-              <div class="forgot-container">
-                <h1>Glemt password</h1>
+  <div class="container">
 
-                <p>Har du glemt dit password, så indtast din e-mail og du vil modtage en mail snarest muligt med introduction om hvordan du reseter.</p>
-              
-                    <div class="mail-container">
+    <div class="opacity"></div>
 
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" color="#4aad52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                        </svg>
-                        
-                        <input type="text" class="input" placeholder="E-mail">
-    
-                    </div>
-                   
-                <!--LOGIN BUTTON-->
-                <input type="text" text="Login" class="submit" value="Reset password">
-             
-              </div>    
+    <div class="menu-container">
+
+      <img src="grafik/aogk_neg_logo.png" width="200" height="43">
+
+      <div class="nav-bar">
+        <ul>
+          <li><a href="customerlogin.html">Forside</a></li>
+          <li><a href="concept.html">Om konceptet</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div> <!-- END NAV_BAR-->
+
+    </div> <!-- END MENU-CONTAINER-->
+
+
+    <div class="contest-container">
+
+      <div class="forgot-container">
+        <h1>Glemt password</h1>
+
+        <p>Har du glemt dit password, så indtast din e-mail og du vil modtage en mail snarest muligt med introduction om hvordan du reseter.</p>
+
+        <div class="mail-container">
+
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" color="#4aad52" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+          </svg>
+
+          <input type="text" class="input" placeholder="E-mail">
+
         </div>
 
-      </div> <!-- END CONTAINER -->
-        
-    
+        <!--LOGIN BUTTON-->
+        <input type="text" text="Login" class="submit" value="Reset password">
+
+      </div> <!-- END FORGOT-CONTAINER -->
+
+    </div> <!-- END CONTEST-CONTAINER -->
+
+  </div> <!-- END CONTAINER -->
+
+
 </body>
+
 </html>
 
 <script>
-    function myFunction() {
-      var passw = document.getElementById("myInput");
-      if (passw.type === "password") {
-        passw.type = "text";
-        eyeop.style.display="none";
-        eyecls.style.display="block";
-      } else {
-        passw.type = "password";
-        eyeop.style.display="block";
-        eyecls.style.display="none";
-      }
+  function myFunction() {
+    var passw = document.getElementById("myInput");
+    if (passw.type === "password") {
+      passw.type = "text";
+      eyeop.style.display = "none";
+      eyecls.style.display = "block";
+    } else {
+      passw.type = "password";
+      eyeop.style.display = "block";
+      eyecls.style.display = "none";
     }
+  }
 
-    function myFunction2() {
-      var passw2 = document.getElementById("myInput2");
-      if (passw2.type === "password") {
-        passw2.type = "text";
-        eyeop2.style.display="none";
-        eyecls2.style.display="block";
-      } else {
-        passw2.type = "password";
-        eyeop2.style.display="block";
-        eyecls2.style.display="none";
-      }
+  function myFunction2() {
+    var passw2 = document.getElementById("myInput2");
+    if (passw2.type === "password") {
+      passw2.type = "text";
+      eyeop2.style.display = "none";
+      eyecls2.style.display = "block";
+    } else {
+      passw2.type = "password";
+      eyeop2.style.display = "block";
+      eyecls2.style.display = "none";
     }
-    </script>
+  }
+</script>
